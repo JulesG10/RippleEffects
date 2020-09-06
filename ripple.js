@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var link  = document.createElement('link');
         link.rel  = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'http://privateechat.000webhostapp.com/Espace/ripple.css';
+        link.href = './ripple.style.css';
         head.appendChild(link);
         if(document.querySelectorAll('body[ripple-composant]')){
         var linkc  = document.createElement('link');
         linkc.rel  = 'stylesheet';
         linkc.type = 'text/css';
-        linkc.href = 'http://privateechat.000webhostapp.com/Espace/rippleComposant.css';
+        linkc.href = './rippleComponents.css';
         head.appendChild(linkc);
         }
     var typeElement = document.querySelectorAll('button[ripple-type]');
