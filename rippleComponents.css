@@ -1,0 +1,138 @@
+div[ripple-menu]{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    background: #3492e6;
+    left: 0;
+    box-shadow: 0px -10px 18px #000000;
+    z-index:9999;
+}
+[ripple-document]{
+        background: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    position:absolute;
+}
+[ripple-img]{
+    height:auto;
+    overflow:hidden;
+}
+[ripple-title]{
+        margin-block-start: 0em;
+    margin-block-end: 0em;
+    color: white;
+}
+[center-top]{
+    position: absolute;
+    top: 50%;
+    bottom:auto;
+    transform: translateY(-50%);
+}
+[center-left]{
+    
+ position: absolute;
+    left: 50%;
+    right:auto;
+    transform: translateX(-50%);
+}
+[center-all]{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+     position: absolute;
+    left: 50%;
+    right:auto;
+     position: absolute;
+    top: 50%;
+    bottom:auto;
+    transform: translate(-50%,-50%);
+}
+[ripple-container]{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 200px);
+    height: 100%;
+    background: #fff;
+    overflow-y: auto;
+}
+[ripple-list]{
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    left: 0;
+    background: #fff;
+    overflow-y:auto;
+    overflow-x:hidden;
+    cursor:pointer;
+    border-right:2Px solid #ccc;
+}
+[ripple-inner]{
+        width: calc(100% - 60px);
+    position: absolute;
+    background: #fff;
+    right: 0;
+    height: 100%;
+}
+[ripple-item]:nth-child(1){
+        position: relative;
+    top: 20px;
+    margin-top: 5px;
+    width: 100%;
+    list-style: none;
+    background-color: rgb(243, 249, 254);
+    color: #3880ff;
+    height: 30px;
+    border-radius: 5px;
+}
+[ripple-item]{
+        position: relative;
+    top: 20px;
+    margin-top: 5px;
+    width: 100%;
+    list-style: none;
+    background-color: #fff;
+    color: #ccc;
+    height: 30px;
+    border-radius: 5px;
+    transition:color 0.1s;
+}
+[ripple-item]:hover{
+    color:#000;
+    background-color: #f9f9f9;
+}
+[ripple-item]:nth-child(1):hover{
+    color: #3880ff;
+}
+[ripple-code]{
+    width: 100%;
+    height: auto;
+   position:relative;
+    background: #f9f9f9;
+    border-radius: 5px;
+    white-space: pre;
+    overflow:auto;
+}
+[ripple-text]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #888484;
+}
+[ripple-fieldset]{
+    margin-top:20px;
+    border-radius:5px;
+    border-color:#888484;
+  border-style: solid;
+  color:#888484;
+}
+[ripple-link]{
+    color:#3b96e6;
+    text-decoration:none;
+}
+[ripple-link]:hover{
+    text-decoration:underline;
+}
