@@ -1,0 +1,93 @@
+[ripple]{
+    position: relative;
+    overflow: hidden;
+    outline: none;
+}
+button[ripple-type]{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color:white;
+}
+.ripple-default{
+    background: #1b74ab;
+     border:2px solid #2071a2;
+}
+.ripple-default:hover{
+    background:blue;
+    border-color:blue;
+}
+.ripple-danger{
+    background: #e80c0c;
+     border:2px solid #b52c2c;
+}
+.ripple-danger:hover{
+    background:#bf0a0a;
+    border-color:#bf0a0a;
+}
+.ripple-success{
+    background: #58ca20;
+     border:2px solid #218818;
+}
+.ripple-success:hover{
+    background:#439a19;
+    border-color:#439a19;
+}
+.ripple-dark{
+   background-color: #343a40;
+    border:2px solid #343a40;
+}
+.ripple-dark:hover{
+    background:#4c545d;
+    border-color:#4c545d;
+}
+.ripple-light{
+    color:#000 !important;
+    background: #e8e8e8;
+     border:2px solid #e8e8e8;
+}
+.ripple-light:hover{
+    background:#d2d2d2;
+    border-color:#d2d2d2;
+}
+.ripple-info{
+    background-color: #17a2b8;
+      border:2px solid #17a2b8;
+}
+.ripple-info:hover{
+    background:#12798a;
+    border-color:#12798a;
+}
+.ripple-warm{
+   background-color: #ffc107;
+    border:2px solid #ffc107;
+}
+.ripple-warm:hover{
+    background-color: #c79705;
+    border-color: #c79705;
+}
+[ripple] .ripple {
+        border-radius: 50%;
+        position: absolute;
+        transform: scale(0);
+}
+.ripple-time-default{
+    animation: ripple 0.5s linear;
+}
+@keyframes ripple {
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
